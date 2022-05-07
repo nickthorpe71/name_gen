@@ -6,10 +6,6 @@ defmodule NameGen do
     |> String.capitalize()
   end
 
-  def alternate_rand_char(n) when n === 0 do
-    Enum.random('aeiou')
-  end
-
   def alternate_rand_char(n) when rem(n, 2) === 0 do
     Enum.random('aeiou')
   end
